@@ -36,7 +36,7 @@ function finishKauf() {
 
 function checkConsole() {
 	if(/Android|webOS|Mobile|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-		document.getElementById("mobile-content").style.display = "inline";
+		document.getElementById("desktop-content").style.display = "inline";
 	}
 	else {
 		document.getElementById("desktop-content").style.display = "inline";
