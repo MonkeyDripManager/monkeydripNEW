@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Monkey Drip</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
+		<script src="js/config.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body onload="checkConsole()">
+		<div id="desktop-content" class="desktop-content">
+			<div id="left-ad" style="color:white">
+				<img src="images/popup1.png" alt="" width="225px" height="225px"><br>
+				<img src="images/popup2.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/popup3.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/left.png" alt="" width="225px" height="92px"><br>
+				<img src="images/popup4.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/popup5.jpg" alt="" width="225px" height="225px"><br>
+				<img src="images/popup6.gif" alt="" width="225px" height="225px"><br>
+			</div>
+			
+			<div id="text">
+				<div class="popup" >
+					<span class="popuptext" id="item_buy_window">
+						<p style="font-size: 40px; text-align: center"> 
+							<b><u>Kauf Abschließen</u></b>
+						</p>
+						<div style="margin-left: 150px;">
+							<form onsubmit="finishKauf()">
+								<div style="margin-left: 100px">
+								
+									<p style="font-size: 20px;"><b><u>Größe</u></b></p>
+									<input type="radio" id="size_M" name="sizeSet" value="M">
+									<label for="size_M">M</label><br>
+									<input type="radio" id="size_L" name="sizeSet" value="L">
+									<label for="size_L">L</label><br>
+									<input type="radio" id="size_XL" name="sizeSet" value="XL">
+									<label for="size_XL">XL</label>
+									
+									<br><br>
+									
+									<label>Menge</label>
+									<select id="menge" name="menge">  
+										<option value = "1" >1</option>
+										<option value = "2">2</option>  
+										<option value = "3">3</option>  
+										<option value = "4">4</option>
+										<option value = "5">5</option>
+									</select>
+								</div>
+								
+								<br>
+								
+								<p style="font-size: 20px; margin-left: 50px"><b><u>Persönliche Daten</u></b></p>
+								
+								<div style="margin: auto;">
+									<div id="left-one" style="font-size:18px; text-align: right">
+										<label for="vorname">Vorname:</label><br>
+										<label for="nachname">Nachname:</label><br>
+										<label for="anschrift">Anschrift:</label><br>
+										<label for="plz">PLZ:</label><br>
+										<label for="ort">Ort:</label><br>
+										<label for="telefonnummer">Telefonnummer:</label><br>
+										<label for="email">E-Mail Adresse:</label><br>
+									</div>
+									<div id="right-one" style="margin-left: 10px;">
+										<input type="text" id="vorname" name="vorname"><br>
+										<input type="text" id="nachname" name="nachname"><br>
+										<input type="text" id="anschrift" name="anschrift"><br>
+										<input type="text" id="plz" name="plz"><br>
+										<input type="text" id="ort" name="ort"><br>
+										<input type="text" id="telefonnummer" name="telefonnummer"><br>
+										<input type="text" id="email" name="email"><br>
+									</div>
+								</div>
+								
+								<br><br><br><br><br><br><br><br><br>
+								<div style="margin-left: 60px;">
+									<input class="button-style" type="submit" value="KAUFEN!" style="height:50px; width:200px; font-size: 40px; border: 4px solid yellow"> 
+								</div>
+							</form>
+						</div>
+					</span>
+				</div>
+				
+				<a href="index.html">
+					<img class="full-image" src="images/banner_default.png" alt="">
+				</a>
+				
+				<div class="padding"></div>
+			
+				<div class="item-image">
+					<img src="images/Artikel1.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Schwarzer Smoking</u> <br><i style="font-size: 25px">Ein Seriöser Look!</i><br> <b class="price">879,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_1">KAUFEN!</button>
+					</div>
+					
+					<div class="padding"></div>
+					
+					<img src="images/Artikel2.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Blauer Smoking</u> <br><i style="font-size: 25px">Ein Seriöser Look!</i><br> <b class="price">879,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_2">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding-side"></div>
+				
+				<div class="item-image">
+					<img src="images/Artikel3.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Holzfäller Style</u> <br><i style="font-size: 25px">Ein Hipster Look!</i><br> <b class="price">499,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_3">KAUFEN!</button>
+					</div>
+					
+					<div class="padding"></div>
+					
+					<img src="images/Artikel4.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Casual Look</u> <br><i style="font-size: 25px">Ein Chilliger Look!</i><br> <b class="price">299,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_4">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding-side"></div>
+				
+				<div class="item-image">
+					<img src="images/Artikel5.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Rotes Kleid</u> <br><i style="font-size: 25px">Ein Ausgeh Look!</i><br> <b class="price">599,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_5">KAUFEN!</button>
+					</div>
+					
+					<div class="padding"></div>
+					
+					<img src="images/Artikel6.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Weißes Vintage Shirt</u> <br><i style="font-size: 25px">Ein Schlichter Look!</i><br> <b class="price">329,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_6">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="bottom-image">
+					<marquee class="blink" behavior="scroll" width="100%" direction="left" scrollamount="20">
+						<div style="font-size: 75px;">
+							!!!!!KAUF DIR DEIN EIGENES MONKEY DRIP OUTFIT JETZT HIER ONLINE!!!!!
+						</div>
+					</marquee>
+					
+					<table style="font-size: 25px; color: white; width: 1350px">
+						<th><a href="sites/Datenschutz.html">Datenschutz</a></th>
+						<th><a href="sites/Impressum.html">Impressum</a></th>
+						<th><a href="sites/UeberUns.html">Über uns</a></th>
+						<th><a href="insta">Instagram <img src="images/insta.png" width="25px" height="20px"></a></th>
+					</table>
+					
+				</div>
+			</div>
+			
+			<div id="right-ad" style="color:white">
+				<img src="images/popup7.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/popup8.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/right.png" alt="" width="225px" height="92px"><br>
+				<img src="images/popup9.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/popup10.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/popup11.gif" alt="" width="225px" height="225px"><br>
+				<img src="images/popup12.gif" alt="" width="225px" height="225px"><br>	
+			</div>
+		</div>
+		
+		<div id="mobile-content" class="mobile-content">
+			<div id="text" style="width: 100%; left: 0;">
+				<div class="popup" >
+					<span class="popuptext" id="item_buy_window">
+						<p style="font-size: 40px; text-align: center"> 
+							<b><u>Kauf Abschließen</u></b>
+						</p>
+						<div style="margin-left: 150px;">
+							<form onsubmit="finishKauf()">
+								<div style="margin-left: 100px">
+								
+									<p style="font-size: 20px;"><b><u>Größe</u></b></p>
+									<input type="radio" id="size_M" name="sizeSet" value="M">
+									<label for="size_M">M</label><br>
+									<input type="radio" id="size_L" name="sizeSet" value="L">
+									<label for="size_L">L</label><br>
+									<input type="radio" id="size_XL" name="sizeSet" value="XL">
+									<label for="size_XL">XL</label>
+									
+									<br><br>
+									
+									<label>Menge</label>
+									<select id="menge" name="menge">  
+										<option value = "1" >1</option>
+										<option value = "2">2</option>  
+										<option value = "3">3</option>  
+										<option value = "4">4</option>
+										<option value = "5">5</option>
+									</select>
+								</div>
+								
+								<br>
+								
+								<p style="font-size: 20px; margin-left: 50px"><b><u>Persönliche Daten</u></b></p>
+								
+								<div style="margin: auto;">
+									<div id="left-one" style="font-size:18px; text-align: right">
+										<label for="vorname">Vorname:</label><br>
+										<label for="nachname">Nachname:</label><br>
+										<label for="anschrift">Anschrift:</label><br>
+										<label for="plz">PLZ:</label><br>
+										<label for="ort">Ort:</label><br>
+										<label for="telefonnummer">Telefonnummer:</label><br>
+										<label for="email">E-Mail Adresse:</label><br>
+									</div>
+									<div id="right-one" style="margin-left: 10px;">
+										<input type="text" id="vorname" name="vorname"><br>
+										<input type="text" id="nachname" name="nachname"><br>
+										<input type="text" id="anschrift" name="anschrift"><br>
+										<input type="text" id="plz" name="plz"><br>
+										<input type="text" id="ort" name="ort"><br>
+										<input type="text" id="telefonnummer" name="telefonnummer"><br>
+										<input type="text" id="email" name="email"><br>
+									</div>
+								</div>
+								
+								<br><br><br><br><br><br><br><br><br>
+								<div style="margin-left: 60px;">
+									<input class="button-style" type="submit" value="KAUFEN!" style="height:50px; width:200px; font-size: 40px; border: 4px solid yellow"> 
+								</div>
+							</form>
+						</div>
+					</span>
+				</div>
+				
+				<a href="index.html">
+					<img class="full-image" src="images/banner_default.png" alt="">
+				</a>
+			
+				<div class="padding"></div>
+			
+				<div class="item-image">
+					<img src="images/Artikel1.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Schwarzer Smoking</u> <br><i style="font-size: 25px">Ein Seriöser Look!</i><br> <b class="price">879,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_1">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding"></div>
+				
+				<div class="item-image">
+					<img src="images/Artikel2.jpg" style="border: 5px solid black;" alt="">
+				
+					<div class="item-desc">
+						<nobr><u>Blauer Smoking</u> <br><i style="font-size: 25px">Ein Seriöser Look!</i><br> <b class="price">879,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_2">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding"></div>
+				
+				<div class="item-image">
+					<img src="images/Artikel3.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Holzfäller Style</u> <br><i style="font-size: 25px">Ein Hipster Look!</i><br> <b class="price">499,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_3">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding"></div>
+					
+				<div class="item-image">
+					<img src="images/Artikel4.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Casual Look</u> <br><i style="font-size: 25px">Ein Chilliger Look!</i><br> <b class="price">299,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_4">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding"></div>
+				
+				<div class="item-image">
+					<img src="images/Artikel5.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Rotes Kleid</u> <br><i style="font-size: 25px">Ein Ausgeh Look!</i><br> <b class="price">599,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_5">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="padding"></div>
+					
+				<div class="item-image">
+					<img src="images/Artikel6.jpg" style="border: 5px solid black;" alt="">
+					
+					<div class="item-desc">
+						<nobr><u>Weißes Vintage Shirt</u> <br><i style="font-size: 25px">Ein Schlichter Look!</i><br> <b class="price">329,99€</b></nobr>
+
+						<button class="button-style" onclick="openItemWindow()" id="item_6">KAUFEN!</button>
+					</div>
+				</div>
+				
+				<div class="bottom-image">
+					<marquee class="blink" behavior="scroll" width="100%" direction="left" scrollamount="20">
+						<div style="font-size: 75px;">
+							!!!!!KAUF DIR DEIN EIGENES MONKEY DRIP OUTFIT JETZT HIER ONLINE!!!!!
+						</div>
+					</marquee>
+					
+					<table style="font-size: 25px; color: white; width: 1350px">
+						<th><a href="sites/Datenschutz.html">Datenschutz</a></th>
+						<th><a href="sites/Impressum.html">Impressum</a></th>
+						<th><a href="sites/UeberUns.html">Über uns</a></th>
+						<th><a href="https://instagram.com/monkeydrip_store">Instagram <img src="images/insta.png" width="25px" height="20px"></a></th>
+					</table>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
